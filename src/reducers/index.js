@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux'
 
-const reducerExample = (state, action) => {
-  return state;
+const reducerExample = (state = {}, action) => {
+  switch (action.type) {
+    default:
+      return state;
+  }
 };
 
 const reducers = combineReducers({
