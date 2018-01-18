@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
-import Todo from './Todo';
+import Todos from './Todos';
 
 
-describe('Todo', () => {
+describe('Todos', () => {
   let component;
   it('renders without crashing', () => {
-    component = shallow(<Todo />);
+    component = shallow(<Todos />);
   });
 
   it('matches our snapshot', () => {
