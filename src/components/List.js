@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import ListContainer from './styled/ListContainer'
 import Title from './styled/Title'
+import Todos from './Todos'
 
 const List = ({
+  title,
+  todos,
 }) => {
   return (
     <ListContainer>
-      <Title>Todo List</Title>
+      <Title>{title}</Title>
+      <Todos todos={todos}/>
     </ListContainer>
   )
 }
