@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { shallow } from 'enzyme'
+import { shallow } from 'enzyme';
 import App from './App';
 
 
 describe('App', () => {
-  let component
+  let component;
   it('renders without crashing', () => {
-    component = shallow(<App />)
+    component = shallow(<App />);
   });
   it('matches our snapshot', () => {
-    expect(component).toMatchSnapshot()
-  })
-})
+    expect(component).toMatchSnapshot();
+  });
+});
 
 
